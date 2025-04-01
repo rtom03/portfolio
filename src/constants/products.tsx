@@ -22,20 +22,25 @@ export const products = [
     content: (
       <div>
         <p>
-          Sit eiusmod ex mollit sit quis ad deserunt. Sint aliqua aliqua ullamco
-          dolore nulla amet tempor sunt est ipsum. Dolor laborum eiusmod
-          cupidatat consectetur velit ipsum. Deserunt nisi in culpa laboris
-          cupidatat elit velit aute mollit nisi. Officia ad exercitation laboris
-          non cupidatat duis esse velit ut culpa et.{" "}
+          This MERN (MongoDB, Express.js, React.js, Node.js) stack application
+          is designed to deliver a seamless and dynamic user experience by
+          leveraging Socket.IO for real-time updates and Zustand for efficient
+          state management.
         </p>
         <p>
-          Exercitation pariatur enim occaecat adipisicing nostrud adipisicing
-          Lorem tempor ullamco exercitation quis et dolor sint. Adipisicing sunt
-          sit aute fugiat incididunt nostrud consequat proident fugiat id.
-          Officia aliquip laborum labore eu culpa dolor reprehenderit eu ex enim
-          reprehenderit. Cillum Lorem veniam eu magna exercitation.
-          Reprehenderit adipisicing minim et officia enim et veniam Lorem
-          excepteur velit adipisicing et Lorem magna.
+          - **Real-Time Updates:** Socket.IO enables bi-directional
+          communication for instant updates in chat systems, notifications, and
+          order tracking. - **State Management:** Zustand simplifies global
+          state handling, reducing re-renders and improving performance. -
+          **Scalable Backend:** Express.js efficiently manages RESTful APIs,
+          while MongoDB stores data, ensuring seamless real-time interactions. -
+          **Responsive UI:** React.js provides a dynamic interface, with Zustand
+          optimizing state transitions. - **Authentication & Security:**
+          JWT-based authentication ensures secure access, with RBAC for user
+          permissions. - **Optimized Performance:** Socket.IO minimizes polling,
+          and Zustand ensures fast state updates. - **Deployment:** The app
+          scales via AWS, DigitalOcean, or Heroku, with frontend hosting on
+          Vercel and backend on Render, supporting Dockerization.
         </p>{" "}
       </div>
     ),
