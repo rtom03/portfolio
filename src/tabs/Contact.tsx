@@ -1,24 +1,38 @@
-import { Linkedin, MessageCircleDashed } from "lucide-react";
+import { Linkedin, LoaderCircle, MessageCircleDashed } from "lucide-react";
 import { useState } from "react";
+import { ToastContainer, toast } from "react-toastify";
 
 const Contact = () => {
-  const [result, setResult] = useState<string>("");
-
+  const [loading, setLoading] = useState<boolean>(false);
   const onSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    const formData = new FormData(event.currentTarget);
-    formData.append("access_key", "86fb848b-571d-4ca4-9b35-5cb86428d5e9");
-
-    const response = await fetch("https://api.web3forms.com/submit", {
-      method: "POST",
-      body: formData,
-    });
-
-    const data = await response.json();
-    setResult(data.success ? "Success!" : "Error");
+    const form = event.currentTarget;
+    try {
+      setLoading(!loading);
+      let formData = new FormData(event.currentTarget);
+      formData.append("access_key", "86fb848b-571d-4ca4-9b35-5cb86428d5e9");
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData,
+      });
+      if (response.ok) {
+        form.reset();
+        toast(
+          "“Thanks for the ping! 🚀 I’ll ACK this faster than a hotfix in prod — swift response incoming.” 😄",
+        );
+        setLoading(false);
+      } else {
+        form.reset();
+        toast("An error occured while sending! pls try again");
+        setLoading(false);
+      }
+    } catch (error) {
+      console.log(error);
+    }
   };
   return (
     <div className="max-w-2xl mx-auto py-12">
+      <ToastContainer />
       <h1 className="text-5xl font-bold mb-8 bg-linear-to-r from-blue-400 to-purple-400 text-transparent bg-clip-text">
         Get in Touch
       </h1>
@@ -112,14 +126,14 @@ const Contact = () => {
               required
             />
           </div>
-          <button
-            onClick={() => alert("Message sent! (This is a demo)")}
-            className="w-full px-8 py-4 bg-linear-to-r from-blue-500 to-purple-500 rounded-lg font-semibold hover:shadow-lg hover:shadow-blue-500/50 transition-all duration-300"
-          >
-            Send Message
+          <button className="w-full px-8 py-4 bg-linear-to-r from-blue-500 to-purple-500 rounded-lg font-semibold hover:shadow-lg hover:shadow-blue-500/50 transition-all duration-300 flex items-center justify-center">
+            {loading ? (
+              <LoaderCircle className="animate-spin" />
+            ) : (
+              "Send Message"
+            )}
           </button>
         </div>
-        <p>{result}</p>
       </form>
     </div>
   );
