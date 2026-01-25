@@ -42,7 +42,7 @@ const Contact = () => {
       </p>
 
       <div className="space-y-6 mb-12">
-        <a
+        {/* <a
           href="https://wa.me/2349016672162"
           className="flex items-center gap-4 p-6 bg-gray-800/50 dark:bg-gray-900/50 rounded-xl border border-gray-700 hover:border-blue-500/50 transition-all duration-300 hover:transform hover:scale-105"
         >
@@ -55,7 +55,7 @@ const Contact = () => {
               Message me directly on whatsapp
             </p>
           </div>
-        </a>
+        </a> */}
 
         {/* <a
           href="https://github.com/rtom03"
