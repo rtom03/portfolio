@@ -1,6 +1,22 @@
 import { Linkedin, MessageCircleDashed } from "lucide-react";
+import { useState } from "react";
 
 const Contact = () => {
+  const [result, setResult] = useState<string>("");
+
+  const onSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    const formData = new FormData(event.currentTarget);
+    formData.append("access_key", "86fb848b-571d-4ca4-9b35-5cb86428d5e9");
+
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData,
+    });
+
+    const data = await response.json();
+    setResult(data.success ? "Success!" : "Error");
+  };
   return (
     <div className="max-w-2xl mx-auto py-12">
       <h1 className="text-5xl font-bold mb-8 bg-linear-to-r from-blue-400 to-purple-400 text-transparent bg-clip-text">
@@ -60,23 +76,30 @@ const Contact = () => {
         </a>
       </div>
 
-      <div className="bg-gray-800/50 dark:bg-gray-900/50 p-8 rounded-xl border border-gray-700">
+      <form
+        className="bg-gray-800/50 dark:bg-gray-900/50 p-8 rounded-xl border border-gray-700"
+        onSubmit={onSubmit}
+      >
         <h2 className="text-2xl font-bold mb-6 text-white">Mail me directly</h2>
         <div className="space-y-4">
           <div>
             <label className="block text-gray-400 mb-2">Name</label>
             <input
-              type="text"
               className="w-full px-4 py-3 bg-gray-900/50 border border-gray-700 rounded-lg focus:border-blue-500 focus:outline-none text-white"
               placeholder="Your name"
+              type="text"
+              name="name"
+              required
             />
           </div>
           <div>
             <label className="block text-gray-400 mb-2">Email</label>
             <input
-              type="email"
               className="w-full px-4 py-3 bg-gray-900/50 border border-gray-700 rounded-lg focus:border-blue-500 focus:outline-none text-white"
               placeholder="your.email@example.com"
+              type="email"
+              name="email"
+              required
             />
           </div>
           <div>
@@ -85,6 +108,8 @@ const Contact = () => {
               rows={5}
               className="w-full px-4 py-3 bg-gray-900/50 border border-gray-700 rounded-lg focus:border-blue-500 focus:outline-none text-white"
               placeholder="Your message..."
+              name="message"
+              required
             />
           </div>
           <button
@@ -94,7 +119,8 @@ const Contact = () => {
             Send Message
           </button>
         </div>
-      </div>
+        <p>{result}</p>
+      </form>
     </div>
   );
 };
