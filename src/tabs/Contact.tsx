@@ -1,9 +1,9 @@
-import { Github, Linkedin, MessageCircleDashed } from "lucide-react";
+import { Linkedin, MessageCircleDashed } from "lucide-react";
 
 const Contact = () => {
   return (
     <div className="max-w-2xl mx-auto py-12">
-      <h1 className="text-5xl font-bold mb-8 bg-gradient-to-r from-blue-400 to-purple-400 text-transparent bg-clip-text">
+      <h1 className="text-5xl font-bold mb-8 bg-linear-to-r from-blue-400 to-purple-400 text-transparent bg-clip-text">
         Get in Touch
       </h1>
       <p className="text-gray-400 mb-12 text-lg">
@@ -89,7 +89,7 @@ const Contact = () => {
           </div>
           <button
             onClick={() => alert("Message sent! (This is a demo)")}
-            className="w-full px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-500 rounded-lg font-semibold hover:shadow-lg hover:shadow-blue-500/50 transition-all duration-300"
+            className="w-full px-8 py-4 bg-linear-to-r from-blue-500 to-purple-500 rounded-lg font-semibold hover:shadow-lg hover:shadow-blue-500/50 transition-all duration-300"
           >
             Send Message
           </button>
