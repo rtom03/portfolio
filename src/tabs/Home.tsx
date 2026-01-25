@@ -15,17 +15,18 @@ const Home = ({
             </span>
           </div>
           <h1 className="text-6xl md:text-4xl font-bold mb-6 bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 text-transparent bg-clip-text">
-            Tomiwa Raheem
+            Matthew Delano{" "}
           </h1>
           <p className="text-2xl md:text-3xl text-gray-300 dark:text-gray-400 mb-8">
-            Fullstack Developer
+            Fullstack Developer | AI Developer
           </p>
           <p className="text-sm text-gray-400 dark:text-gray-500 mb-12 max-w-2xl leading-relaxed">
-            Crafting elegant solutions to complex problems — but only after
-            TypeScript approves. I build scalable web apps with strong opinions,
-            strict types, and zero tolerance for `any` (because `any` is not a
-            lifestyle choice). Passionate about clean code, predictable bugs,
-            and user experiences that compile on the first try.
+            Senior Software Engineer with a strong academic foundation and over
+            10 years of professional experience in the IT industry. Have rich
+            experience from the start-up environment to the enterprise
+            solutions, from web app to mobile development, from front-end
+            development to back-end RESTAPI development. Love building great
+            products.
           </p>
           <div className="flex gap-4 flex-wrap">
             <button

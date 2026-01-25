@@ -27,7 +27,7 @@ const Contact = () => {
           </div>
         </a>
 
-        <a
+        {/* <a
           href="https://github.com/rtom03"
           target="_blank"
           rel="noopener noreferrer"
@@ -40,10 +40,10 @@ const Contact = () => {
             <p className="text-gray-400 text-sm">GitHub</p>
             <p className="text-white font-semibold">github.com/rtom03</p>
           </div>
-        </a>
+        </a> */}
 
         <a
-          href="https://www.linkedin.com/in/tomiwa-raheem-98b19a398/"
+          href="https://www.linkedin.com/in/matthew-delano-2850ab292/"
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center gap-4 p-6 bg-gray-800/50 dark:bg-gray-900/50 rounded-xl border border-gray-700 hover:border-blue-500/50 transition-all duration-300 hover:transform hover:scale-105"
@@ -54,7 +54,7 @@ const Contact = () => {
           <div>
             <p className="text-gray-400 text-sm">LinkedIn</p>
             <p className="text-white font-semibold">
-              linkedin.com/in/tomiwa.raheem
+              linkedin.com/in/matthew.delano
             </p>
           </div>
         </a>

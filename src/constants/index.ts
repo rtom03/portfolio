@@ -1,29 +1,25 @@
 const projects = [
   {
-    title: "E-Commerce Platform",
-    description:
-      "Full-stack e-commerce solution with React, Node.js, and PostgreSQL",
-    tech: ["React", "Node.js", "PostgreSQL", "Stripe"],
-    link: "#",
-  },
-  {
-    title: "Task Management System",
-    description:
-      "Real-time collaborative task manager with WebSocket integration",
-    tech: ["TypeScript", "Express", "MongoDB", "Socket.io"],
-    link: "#",
-  },
-  {
     title: "Astronomer Simulator",
-    description: "AI-powered content creation tool with modern UI/UX",
-    tech: ["Next.js", "OpenAI API", "Tailwind", "Vercel"],
-    link: "#",
+    description:
+      "A full-stack e-commerce solution with cart and payment integration",
+    tech: ["React", "TailwindCss", "MongoDB", "Stripe"],
+    image: "./astro.png",
+    fullDescription:
+      "A comprehensive e-commerce platform built with modern web technologies. Features include user authentication, product catalog, shopping cart, secure payment processing with Stripe, order management, and an admin dashboard for inventory control.",
+    liveLink: "https://example.com",
+    githubLink: "https://github.com/example",
   },
   {
-    title: "Healthcare Dashboard",
-    description: "Patient management system with analytics and reporting",
-    tech: ["React", "Django", "PostgreSQL", "Chart.js"],
-    link: "#",
+    title: "Task Management App",
+    description: "Collaborative task manager with real-time updates",
+    tech: ["React", "Firebase", "Tailwind CSS"],
+    image:
+      "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&h=500&fit=crop",
+    fullDescription:
+      "A real-time collaborative task management application. Team members can create, assign, and track tasks with live updates. Includes drag-and-drop functionality, deadline reminders, and progress tracking dashboards.",
+    liveLink: "https://example.com",
+    githubLink: "https://github.com/example",
   },
 ];
 const experience = [
@@ -54,8 +50,14 @@ const skills = [
     category: "Frontend",
     items: [
       "React",
-      "TypeScript",
+      "Angular",
+      "Vue",
       "Tailwind CSS",
+      "Blade",
+      "Svelte",
+      "Nuxt",
+      "RxJS",
+      "SCSS",
       "useQuery",
       "Redux- Thunk/Saga",
     ],
@@ -68,27 +70,44 @@ const skills = [
       ".Net",
       "Django",
       "FastAPI",
+      "Laravel",
+      "SpringBoot",
+      "Asp.Net",
       "PostgreSQL (prisma)",
       "Mysql",
       "MongoDb (mongoose)",
     ],
   },
   {
-    category: "Tools",
+    category: "Core Competency",
     items: [
-      "Git",
-      "Docker",
-      "AWS",
-      "CI/CD",
-      "Jenkins",
-      "Micro-Service",
-      "Kafka",
-      "RabbitMQ",
+      "Responsive Web Design",
+      "Progressive Web Apps (PWAs)",
+      "WebComponents",
+      "WebAssembly",
+      "Microservices Architecture",
+      "Event-Driven Architecture",
+      "RestFul API - gRPC - GrapgQl",
+      "Serverless Architecture",
+      "API Gateway",
+      "WebSockets",
+      "Agile Methodologies (Scrum, Kanban)",
     ],
   },
   {
-    category: "Other",
-    items: ["REST API", "GraphQL", "WebSockets", "Chrome API", "WebHooks"],
+    category: "Test & Automation",
+    items: [
+      "Jest",
+      "Mocha",
+      "Chai",
+      "Selenium",
+      "Cypress",
+      "Jasmine",
+      "Karma",
+      "Unit Testing",
+      "E2E Testing",
+      "Integration Testing",
+    ],
   },
 ];
 export { projects, skills, experience };
