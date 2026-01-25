@@ -1,45 +1,62 @@
 const projects = [
   {
-    title: "Astronomer Simulator",
+    title: "Epic Platform",
     description:
-      "A full-stack e-commerce solution with cart and payment integration",
-    tech: ["React", "TailwindCss", "MongoDB", "Stripe"],
-    image: "./astro.png",
+      "Epic software makes it possible for every patient to have a single, comprehensive medical record that informs and is informed by their health experiences.",
+    tech: ["React", "TailwindCss", "MongoDB", "Stripe", "teraform", "Python"],
+    image: "./epic.png",
     fullDescription:
-      "A comprehensive e-commerce platform built with modern web technologies. Features include user authentication, product catalog, shopping cart, secure payment processing with Stripe, order management, and an admin dashboard for inventory control.",
-    liveLink: "https://example.com",
+      "Epic software makes it possible for every patient to have a single, comprehensive medical record that informs and is informed by their health experiences. The goal is higher-quality, more personalized care that's simpler for patients, medical professionals, and everyone who makes healthcare happen.",
+    liveLink: "https://www.epic.com/",
+    githubLink: "https://github.com/epic",
+  },
+  {
+    title: "Paxos",
+    description:
+      "Paxos Trust Company is a New York–based financial institution and technology company specializing in blockchain.",
+    tech: ["React", "Firebase", "Tailwind CSS", "springboot", "jenkins"],
+    image: "/paxos.png",
+    fullDescription:
+      "As a Software Engineer at Paxos Trust Company, I contributed to building and maintaining critical infrastructure for one of the leading regulated blockchain and cryptocurrency platforms. Working within a fast-paced fintech environment, I developed scalable solutions that power Paxos's suite of digital asset services, including stablecoin issuance, tokenization, and settlement systems",
+    liveLink: "https://www.paxos.com/",
     githubLink: "https://github.com/example",
   },
   {
-    title: "Task Management App",
-    description: "Collaborative task manager with real-time updates",
-    tech: ["React", "Firebase", "Tailwind CSS"],
-    image:
-      "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&h=500&fit=crop",
+    title: "OpenDoor",
+    description:
+      "Sell on your own schedule. Get an offer from Opendoor and choose your close date..",
+    tech: [
+      "React",
+      "Firebase",
+      "Tailwind CSS",
+      "useQuery",
+      "Redux- Thunk/Saga",
+    ],
+    image: "/od.png",
     fullDescription:
-      "A real-time collaborative task management application. Team members can create, assign, and track tasks with live updates. Includes drag-and-drop functionality, deadline reminders, and progress tracking dashboards.",
-    liveLink: "https://example.com",
-    githubLink: "https://github.com/example",
+      "As a Senior Software Engineer at Opendoor, I played a key role in revolutionizing the real estate industry by building technology that enables homeowners to sell their properties with unprecedented flexibility and simplicity. I contributed to the platform that has transformed thousands of home sales by eliminating traditional friction points and putting sellers in control of their timeline.",
+    liveLink: " https://www.opendoor.com",
+    githubLink: "https://github.com/opendoor",
   },
 ];
 const experience = [
   {
     title: "Senior Fullstack Developer",
-    company: "Tech Solutions Inc.",
+    company: "Epic.",
     period: "2022 - Present",
     description:
       "Led development of multiple enterprise applications, mentored junior developers, and implemented CI/CD pipelines.",
   },
   {
     title: "Fullstack Developer",
-    company: "Digital Innovations",
+    company: "Paxos",
     period: "2020 - 2022",
     description:
       "Built scalable web applications using React and Node.js, collaborated with cross-functional teams.",
   },
   {
     title: "Frontend Developer",
-    company: "Creative Studios",
+    company: "OpenDoor",
     period: "2018 - 2020",
     description:
       "Developed responsive user interfaces and improved application performance by 40%.",
