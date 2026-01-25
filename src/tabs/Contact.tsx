@@ -1,4 +1,4 @@
-import { Linkedin, LoaderCircle, MessageCircleDashed } from "lucide-react";
+import { Linkedin, LoaderCircle } from "lucide-react";
 import { useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
 
