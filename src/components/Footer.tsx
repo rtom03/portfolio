@@ -10,13 +10,13 @@ const Footer = () => {
           </p>
           <div className="flex gap-4">
             <a
-              href="https://github.com"
+              href="https://www.linkedin.com/in/matthew-delano-2850ab292/"
               className="text-gray-400 hover:text-blue-400 transition-colors"
             >
               <Github size={20} />
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/matthew-delano-2850ab292/"
               className="text-gray-400 hover:text-blue-400 transition-colors"
             >
               <Linkedin size={20} />
