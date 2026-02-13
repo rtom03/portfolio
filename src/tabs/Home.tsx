@@ -15,7 +15,7 @@ const Home = ({
             </span>
           </div>
           <h1 className="text-6xl md:text-4xl font-bold mb-6 bg-linear-to-r from-blue-400 via-purple-400 to-pink-400 text-transparent bg-clip-text">
-            Matthew Delano{" "}
+            Thomas Tyner{" "}
           </h1>
           <p className="text-2xl md:text-3xl text-gray-300 dark:text-gray-400 mb-8">
             Fullstack Developer | AI Developer
@@ -72,6 +72,7 @@ const Home = ({
             </div>
           ))}
         </div>
+        {/* <ParentComponent /> */}
       </section>
     </div>
   );
