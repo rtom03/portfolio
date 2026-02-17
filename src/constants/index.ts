@@ -1,65 +1,41 @@
 const projects = [
   {
-    title: "Epic Platform",
+    title: "Rackspace Technology",
     description:
       "Epic software makes it possible for every patient to have a single, comprehensive medical record that informs and is informed by their health experiences.",
     tech: ["React", "TailwindCss", "MongoDB", "Stripe", "teraform", "Python"],
     image: "./epic.png",
     fullDescription:
-      "Epic software makes it possible for every patient to have a single, comprehensive medical record that informs and is informed by their health experiences. The goal is higher-quality, more personalized care that's simpler for patients, medical professionals, and everyone who makes healthcare happen.",
-    liveLink: "https://www.epic.com/",
-    githubLink: "https://github.com/epic",
+      "SaaS Optimization & Deployment: Analyzed business processes to identify suitable SaaS solutions, led customization and deployment of secure, scalable, and cost-efficient SaaS applications, and optimized integrations within a multicloud environment to reduce operational costs while improving reliability, accessibility, and user experience.",
+    liveLink: "https://docs.rackspace.com/",
+    githubLink: "https://github.com/rackspace",
   },
   {
-    title: "Paxos",
+    title: "HomeAway",
     description:
-      "Paxos Trust Company is a New York–based financial institution and technology company specializing in blockchain.",
+      "A fast-growing rental platform startup that connects property owners and renters through a secure, scalable, and user-friendly booking and management system.",
     tech: ["React", "Firebase", "Tailwind CSS", "springboot", "jenkins"],
     image: "/paxos.png",
     fullDescription:
-      "As a Software Engineer at Paxos Trust Company, I contributed to building and maintaining critical infrastructure for one of the leading regulated blockchain and cryptocurrency platforms. Working within a fast-paced fintech environment, I developed scalable solutions that power Paxos's suite of digital asset services, including stablecoin issuance, tokenization, and settlement systems",
-    liveLink: "https://www.paxos.com/",
-    githubLink: "https://github.com/example",
-  },
-  {
-    title: "OpenDoor",
-    description:
-      "Sell on your own schedule. Get an offer from Opendoor and choose your close date..",
-    tech: [
-      "React",
-      "Firebase",
-      "Tailwind CSS",
-      "useQuery",
-      "Redux- Thunk/Saga",
-    ],
-    image: "/od.png",
-    fullDescription:
-      "As a Senior Software Engineer at Opendoor, I played a key role in revolutionizing the real estate industry by building technology that enables homeowners to sell their properties with unprecedented flexibility and simplicity. I contributed to the platform that has transformed thousands of home sales by eliminating traditional friction points and putting sellers in control of their timeline.",
-    liveLink: " https://www.opendoor.com",
-    githubLink: "https://github.com/opendoor",
+      "Built and maintained user-facing web applications for a large-scale vacation rental platform using React, Redux, and TypeScript, delivering responsive, accessible, and high-performance interfaces. Collaborated with backend teams to integrate RESTful APIs for booking, payments, and listings, while migrating legacy AngularJS code to modern React patterns to reduce technical debt. Supported CI/CD pipelines and automated testing with Jenkins and Cypress, significantly improving release speed, stability, and deployment reliability.",
+    liveLink: " http://www.homeaway.com",
+    githubLink: "https://github.com/homeaway",
   },
 ];
 const experience = [
   {
     title: "Senior Fullstack Developer",
-    company: "Epic.",
+    company: "Rackspace technology.",
     period: "2022 - Present",
     description:
-      "Led development of multiple enterprise applications, mentored junior developers, and implemented CI/CD pipelines.",
+      "SaaS Optimization & Deployment: Analyzed business processes to identify suitable SaaS solutions, led customization and deployment of secure, scalable, and cost-efficient SaaS applications, and optimized integrations within a multicloud environment to reduce operational costs while improving reliability, accessibility, and user experience.",
   },
   {
     title: "Fullstack Developer",
-    company: "Paxos",
+    company: "HomeAway",
     period: "2020 - 2022",
     description:
-      "Built scalable web applications using React and Node.js, collaborated with cross-functional teams.",
-  },
-  {
-    title: "Frontend Developer",
-    company: "OpenDoor",
-    period: "2018 - 2020",
-    description:
-      "Developed responsive user interfaces and improved application performance by 40%.",
+      "Built and maintained user-facing web applications for a large-scale vacation rental platform using React, Redux, and TypeScript, delivering responsive, accessible, and high-performance interfaces. Collaborated with backend teams to integrate RESTful APIs for booking, payments, and listings, while migrating legacy AngularJS code to modern React patterns to reduce technical debt. Supported CI/CD pipelines and automated testing with Jenkins and Cypress, significantly improving release speed, stability, and deployment reliability.",
   },
 ];
 const skills = [

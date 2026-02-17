@@ -14,7 +14,7 @@ const Header = ({
       <nav className="container mx-auto px-6 py-4">
         <div className="flex justify-between items-center">
           <div className="text-2xl font-bold bg-linear-to-r from-blue-400 to-purple-400 text-transparent bg-clip-text">
-            MD
+            TT
           </div>
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
